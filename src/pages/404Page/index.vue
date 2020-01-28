@@ -1,18 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      账号：<input/>
-    </p>
-    <p>
-      密码：<input/>
-    </p>
+    <h1>can not found page, try reload</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'homePage',
+  name: 'notFoundPage',
   props: {
     msg: String
   }
