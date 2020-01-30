@@ -1,5 +1,6 @@
 const user = require('../models/user')
-const jwt = require('koa-jwt')
+// const jwt = require('koa-jwt')
+const jwt = require('jsonwebtoken')
 
 const SECRET_KEY = 'vue-koa-demo' // 指定密钥，这是之后用来判断token合法性的标志
 
@@ -29,8 +30,7 @@ const postUserAuth = async (ctx) => {
       name: userInfo.userName,
       id: userInfo.id,
     }
-    //TODO: token获取有问题 
-    const token = jwt(userToken, SECRET_KEY)
+    const token = jwt.sign(userToken, SECRET_KEY)
     ctx.body = {
       success: true,
       token,

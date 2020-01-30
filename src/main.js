@@ -25,6 +25,19 @@ const router = new VueRouter({
   }]
 })
 
+//路由登录页面拦截
+// router.beforeEach((to, from, next) => {
+//   const token = window.localStorage.getItem('TOKEN')
+//   if(!token) {
+//     next('/login')
+//   }
+//   if(to.path !== '/login') {
+//     next()
+//   }else {
+//     next('/')
+//   }
+// })
+
 new Vue({
   router,
   render: (h) => h(App)
