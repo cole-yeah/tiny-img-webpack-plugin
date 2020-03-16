@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h2>home page</h2>
     <p>
       账号：<input/>
     </p>
