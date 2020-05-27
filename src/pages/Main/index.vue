@@ -1,14 +1,18 @@
 <template>
-  <div>
-    <router-view></router-view>
-    <div> app page </div>
+  <div @click="jumpToSearch">
+    main page
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App',
+  name: 'Main',
+  methods: {
+    jumpToSearch() {
+      this.$router.push({path: '/search'})
+    }
+  }
 }
 </script>
 

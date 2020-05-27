@@ -1,14 +1,13 @@
 <template>
   <div>
-    <router-view></router-view>
-    <div> app page </div>
+   search page~~
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App',
+  name: 'Main',
 }
 </script>
 
