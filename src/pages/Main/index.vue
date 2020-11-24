@@ -1,6 +1,11 @@
 <template>
-  <div @click="jumpToSearch">
-    main page
+  <div class="wrapper">
+    <div>
+      left content
+    </div>
+    <div>
+      right content
+    </div>
   </div>
 </template>
 
@@ -16,13 +21,13 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  .wrapper {
+    padding: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
 </style>
