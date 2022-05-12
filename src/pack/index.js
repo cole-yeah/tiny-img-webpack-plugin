@@ -69,7 +69,7 @@ const bundle = (file) => {
   })(${depsGraph})`;
 };
 
-const content = bundle("./src/index.js");
+const content = bundle("./example/index.js");
 
 const isExists = fs.existsSync("./dist");
 !isExists && fs.mkdirSync("./dist");
